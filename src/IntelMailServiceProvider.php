@@ -20,7 +20,7 @@ class IntelMailServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            // new IntelMailController();
+
         }
     }
 }
