@@ -1,0 +1,17 @@
+{
+    "name": "intelrx/intelmail",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Intelrx\\Intelmail\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "raza9798",
+            "email": "m.raza9798@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
