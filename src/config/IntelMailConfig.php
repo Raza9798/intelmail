@@ -1,6 +1,6 @@
 <?php
 
-namespace Intelrx\Intelmail\Config;
+namespace Rapidrx\Intelmail\Config;
 
 class IntelMailConfig
 {

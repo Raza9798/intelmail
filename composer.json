@@ -1,11 +1,11 @@
 {
-    "name": "intelrx/intelmail",
+    "name": "rapidrx/intelmail",
     "description": "A Laravel package to test email services using the Mailtrap API. This package allows developers to send test emails through Mailtrap's sandbox environment, ensuring email functionality works correctly in a development setting.",
     "keywords": [ "laravel", "mailtrap", "email", "testing", "email-testing", "api", "sandbox",  "laravel", "framework", "rapidkit", "intelrx", "laravel-backup", "telescope", "laravel-telescope", "spatie" ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Intelrx\\Intelmail\\": "src/"
+            "Rapidrx\\Intelmail\\": "src/"
         }
     },
     "authors": [
@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Intelrx\\Intelmail\\IntelMailServiceProvider"
+                "Rapidrx\\Intelmail\\IntelMailServiceProvider"
             ]
         }
     }

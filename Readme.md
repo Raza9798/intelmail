@@ -4,7 +4,7 @@ This package allows you to test email functionalities in a development environme
 
 ## INSTALLATION
 ```php
-composer require --dev intelrx/intelmail
+composer require --dev rapidrx/intelmail
 ```
 
 

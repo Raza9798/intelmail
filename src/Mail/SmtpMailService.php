@@ -1,6 +1,6 @@
 <?php
 
-namespace Intelrx\Intelmail\Mail;
+namespace Rapidrx\Intelmail\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

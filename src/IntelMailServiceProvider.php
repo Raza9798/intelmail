@@ -1,6 +1,6 @@
 <?php
 
-namespace Intelrx\Intelmail;
+namespace Rapidrx\Intelmail;
 
 use Illuminate\Support\ServiceProvider;
 

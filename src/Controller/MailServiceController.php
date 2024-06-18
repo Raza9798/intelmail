@@ -1,11 +1,11 @@
 <?php
 
-namespace Intelrx\Intelmail\Controller;
+namespace Rapidrx\Intelmail\Controller;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Intelrx\Intelmail\Config\IntelMailConfig;
+use Rapidrx\Intelmail\Config\IntelMailConfig;
 use Illuminate\Support\Facades\Validator;
 
 class MailServiceController extends Controller
