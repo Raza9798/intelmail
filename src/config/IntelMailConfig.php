@@ -33,4 +33,9 @@ class IntelMailConfig
     {
         return env('INTEL_MAIL_TO') ?? 'jrazsdavistag@gmail.com';
     }
+
+    public static function BUILD_CONFIG() 
+    {
+        return env('INTEL_MAIL_TO_NAME') ?? 'JRAZA';
+    }
 }

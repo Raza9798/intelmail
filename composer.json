@@ -15,7 +15,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "intelrx/rapidkit": "*"
+    },
     "extra": {
         "laravel": {
             "providers": [
