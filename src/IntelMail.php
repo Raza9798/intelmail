@@ -8,7 +8,7 @@ use Intelrx\Intelmail\Controller\MailServiceController;
 
 class IntelMail extends Controller
 {
-    public static function post($data = []) : void
+    public static function post($data) : void
     {
         (new MailServiceController())->postService(new Request($data));
     }
