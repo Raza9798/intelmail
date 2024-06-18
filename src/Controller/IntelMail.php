@@ -1,6 +1,6 @@
 <?php
 
-namespace Rapidrx\Intelmail;
+namespace Rapidrx\Intelmail\Controller;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
