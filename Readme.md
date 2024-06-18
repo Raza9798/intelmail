@@ -1,8 +1,14 @@
-# Laravel Package for Testing Email Service Using Mailtrap API
+# Testing Email Service Using Mailtrap API
 
 This package allows you to test email functionalities in a development environment using the Mailtrap API. Follow the steps below to configure the package, set up your environment, and send test emails.
 
-## Installation
+## INSTALLATION
+```php
+composer require --dev intelrx/intelmail
+```
+
+
+## CONFIGURATION
 
 1. **Signup for Mailtrap**
     - Go to [Mailtrap](https://mailtrap.io/).
@@ -25,7 +31,6 @@ This package allows you to test email functionalities in a development environme
     - Copy the necessary API details and add them to your `.env` file:
         ```env
         INTEL_MAIL_BASE_URL=your_base_url
-        INTEL_MAIL_FROM_ADDRESS=your_from_address
         INTELMAIL_AUTHORIZATION=your_authorization_token
         INTEL_MAIL_FROM_NAME=your_from_name
         INTEL_MAIL_TO=recipient_email_address

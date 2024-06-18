@@ -16,6 +16,7 @@ class MailServiceController extends Controller
         $validator = Validator::make($request->all(), [
             'subject' => ['required'],
             'attachment' => ['bail'],
+            'to' => ['required'],
             'body_type' => [
                 'required',
                 function ($attribute, $value, $fail) use ($request) {
@@ -48,7 +49,7 @@ class MailServiceController extends Controller
         ];
         $payload = [
             'from' => ['email' => IntelMailConfig::MAIL_FROM_ADDRESS(), 'name' => IntelMailConfig::MAIL_FROM_NAME()],
-            'to' => [['email' => IntelMailConfig::MAIL_TO()]],
+            'to' => [['email' => $request->get('to')]],
             'subject' => $request->get('subject'),
             'category' => 'TTTT',
             'attachments' => $request->get('attachment', [])
