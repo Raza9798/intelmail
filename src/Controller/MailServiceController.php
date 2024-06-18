@@ -5,6 +5,7 @@ namespace Intelrx\Intelmail\Controller;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Intelrx\Intelmail\Config\IntelMailConfig;
 
 class MailServiceController extends Controller
 {
@@ -14,19 +15,14 @@ class MailServiceController extends Controller
         $fileContent = base64_encode(file_get_contents($filePath));
 
         $headers = [
-            'Authorization' => 'Bearer 872f750da9a0d3a17c0f28b41b653835',
-            'Content-Type' => 'application/json',
+            'Authorization' => IntelMailConfig::INTELMAIL_AUTHORIZATION(),
+            'Content-Type' =>  IntelMailConfig::CONTENT_TYPE(),
         ];
         $payload = [
-            'from' => [
-                'email' => 'mailtrap@demomailtrap.com',
-                'name' => 'Mailtrap Test'
-            ],
-            'to' => [
-                ['email' => 'jrazavistag@gmail.com']
-            ],
+            'from' => [ 'email' => IntelMailConfig::MAIL_FROM_ADDRESS(), 'name' => IntelMailConfig::MAIL_FROM_NAME() ],
+            'to' => [['email' => IntelMailConfig::MAIL_TO()]],
             'subject' => 'TEST',
-            // 'text' => 'CHECK',
+            'text' => 'T1',
             // 'html' => view('welcome')->render(), 
             'category' => 'TTTT',
             'attachments' => [
@@ -37,8 +33,7 @@ class MailServiceController extends Controller
                 ]
             ]
         ];
-        $response = Http::withHeaders($headers)
-            ->post('https://send.api.mailtrap.io/api/send', $payload);
+        $response = Http::withHeaders($headers)->post(IntelMailConfig::BASE_URL(), $payload);
 
         if ($response->successful()) {
             echo "Email sent successfully!";
