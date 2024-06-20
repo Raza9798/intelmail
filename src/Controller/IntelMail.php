@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Rapidrx\Intelmail\Controller\MailServiceController;
 use Rapidrx\Intelmail\Mail\SmtpMailService;
-use Rapidrx\Rapidkit\Config\Config;
 
 class IntelMail extends Controller
 {
