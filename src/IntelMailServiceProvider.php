@@ -19,8 +19,6 @@ class IntelMailServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if ($this->app->runningInConsole()) {
-
-        }
+        $this->loadViewsFrom(__DIR__ . '/Mail', 'IntelMail');
     }
 }

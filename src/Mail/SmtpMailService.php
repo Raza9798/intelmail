@@ -38,7 +38,7 @@ class SmtpMailService extends Mailable
     public function content(): Content
     {
         return new Content(
-            html: 'welcome',
+            html: 'IntelMail::content',
         );
     }
 
